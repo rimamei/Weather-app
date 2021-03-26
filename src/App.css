@@ -1,0 +1,132 @@
+html, body, #root {
+    font: 0.9rem sans-serif;
+    background: #0a1f44;
+    color: #f7f7f8;;
+    height: 100%;
+    margin: 0;
+}
+
+.main-container {
+    background: url('https://images.unsplash.com/photo-1533447448066-75ac9b65b459?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.main-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search {
+    background: rgba(250, 250, 250, 0.5);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding: 15px 1%;
+    width: 400px;
+    box-shadow: 5px 5px 5px 0px rgba(44, 43, 43, 0.404);
+}
+
+.searchIcon {
+    font-size: 25px;
+    color: #000;
+}
+
+input {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    outline: none;
+    padding: 0 1%;
+    width: 80%;
+}
+
+::placeholder {
+    color: #000;
+}
+
+.city {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 8%;
+    border-radius: 20px;
+    background: linear-gradient(to right, rgba(143, 142, 142, 0.6), rgba(231, 226, 231, 0.7));
+    box-shadow: 10px 10px 5px 0px rgba(15, 15, 15, 0.404);
+    margin-bottom: 20px;
+}
+
+.button {
+    background:#ff8c00;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background:#a85f06;
+}
+
+p {
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.city-temp {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #f7f7f8;
+    text-align: center;
+}
+
+.city sup {
+    font-size: 0.5em;
+}
+
+.city-name {
+    font-size: 2em;
+}
+
+.city-name sup {
+    padding: 0.2em 0.6em;
+    margin-left: 0.2em;
+    border-radius: 30px;
+    color: #fff;
+    background: #ff8c00;
+}
+
+.city-icon {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width: 720px) {
+    .search {
+        padding: 15px;
+        width: 80%;
+    }
+
+    .searchIcon {
+        font-size: 20px;
+    }
+
+    .city {
+        padding: 40px 20%;
+    }
+}
